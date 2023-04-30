@@ -36,3 +36,112 @@
     transform: rotate(360deg);
   }
 }
+
+.carousel-inner > .carousel-item > img {
+  width:100vh;
+  height:100vh;
+  opacity:0.5;
+  
+
+}
+.carousel-inner > .carousel-item {
+background-color: black;
+}
+
+.carousel-item {
+  transition: transform 2.6s ease-in-out;
+}
+
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  transition: opacity 0s 2.6s;
+}
+.form-control::placeholder { 
+  color:white;
+  opacity: 1; 
+}
+.ide  ::placeholder{
+  color:black;
+  opacity:0.5;
+
+}
+
+.j{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  
+  justify-content: space-around;
+}
+
+
+#demo {
+  font-size: 56px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+  color: white;
+}
+
+.word {
+  display: block;
+  
+}
+
+.word span {
+  color: #ff5252;
+  position: relative;
+
+}
+
+.word span::after {
+  content: "";
+  width: 8px;
+  height: 100%;
+  background: #ff5252;
+  display: block;
+  position: absolute;
+  right: -10px;
+  top: 0;
+  animation: blink 0.5s ease infinite alternate-reverse;
+ 
+}
+
+@keyframes blink {
+  from {
+    opacity: 100%;
+    
+  }
+
+  to {
+    opacity: 0%;
+  }
+
+}
+
+.word.empty {
+  visibility: hidden;
+}
+
+.word.empty span::after {
+  visibility: visible;
+  right: 0;
+}
+@media (max-width:963px){
+  #demo {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.2;
+    color: white;
+  }
+}
+@media (max-width:627px){
+  #demo {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1;
+    color: white;
+  }
+}
